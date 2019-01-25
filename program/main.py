@@ -15,6 +15,12 @@ import test
 import application
 import sys
 sys.path.append('program/tool')
+<<<<<<< HEAD
+=======
+from config import Config
+
+# 主程序
+>>>>>>> 6c214a3690ee188aa7f66b1e8b2b4d5be303ca51
 if __name__ == "__main__":
     if Config.run_flag == "0":
         train.train(Config)
