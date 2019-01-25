@@ -105,7 +105,7 @@ class train(object):
     def train(self):
         '''训练模型'''
         # number_of_epoch = len(self.files_content) // self.config.batch_size
-        number_of_epoch = 500
+        number_of_epoch = 50
         builded_model = model.build_model(self.config, self.num2word,
                                           self.words)
         self.model = builded_model
