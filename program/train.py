@@ -17,8 +17,8 @@ from keras.callbacks import LambdaCallback
 import model
 import sys
 sys.path.append('program/tool')
-import utils
-import data_utils
+import tool.utils
+import tool.data_utils
 
 
 class train(object):

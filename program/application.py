@@ -17,8 +17,8 @@ import train
 from keras.models import Input, Model, load_model
 import sys
 sys.path.append('program/tool')
-from config import Config
-import data_utils
+from tool.config import Config
+import tool.data_utils
 
 # 文件预处理
 word2numF, num2word, words, files_content = data_utils.preprocess_file(Config)
