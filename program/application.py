@@ -48,7 +48,7 @@ def application(config):
     else:
         train.train(Config)
 
-    text = input("请输入:")
+    text = input("请输入四个以下的关键字:")
     with open(config.poetry_file, 'r', encoding='utf-8') as f:
         file_list = f.readlines()
     random_line = random.choice(file_list)
