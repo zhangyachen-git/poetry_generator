@@ -21,7 +21,7 @@ def build_model(config, num2word, words):
     '''建立模型'''
 
     # 输入的dimension
-    input_tensor = Input(shape=(config.max_len, ))
+    input_tensor = Input(shape=(config.max_len,))
     embedd = Embedding(
         len(num2word) + 2, 300, input_length=config.max_len)(input_tensor)
     lstm = Bidirectional(GRU(128, return_sequences=True))(embedd)
