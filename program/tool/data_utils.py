@@ -10,8 +10,7 @@
 '''
 
 # here put the import lib
-from config import Config
-import utils
+from tool.config import Config
 
 # 标点符号集
 puncs = [']', '[', '（', '）', '{', '}', '：', '《', '》']
@@ -56,7 +55,7 @@ def preprocess_file(Config):
 
 
 word2numF, num2word, words, files_content = preprocess_file(Config)
-#utils.text_save("data/output/data_set/word2numF.txt", word2numF)
-#utils.text_save("data/output/data_set/num2word.txt", num2word)
-#utils.text_save("data/output/data_set/words.txt", words)
-#utils.text_save("data/output/data_set/files_content.txt", files_content)
+# utils.text_save("data/output/data_set/word2numF.txt", word2numF)
+# utils.text_save("data/output/data_set/num2word.txt", num2word)
+# utils.text_save("data/output/data_set/words.txt", words)
+# utils.text_save("data/output/data_set/files_content.txt", files_content)

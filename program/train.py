@@ -15,10 +15,8 @@ import random
 import numpy as np
 from keras.callbacks import LambdaCallback
 import model
-import sys
-sys.path.append('program/tool')
-import tool.utils
-import tool.data_utils
+from tool import utils
+from tool import data_utils
 
 
 class train(object):
@@ -54,7 +52,7 @@ class train(object):
         #     return
         print(
             "\n==================Epoch {}=====================".format(epoch))
-        #utils.text_save(epoch)
+        # utils.text_save(epoch)
         for diversity in [0.5, 1.0, 1.5]:
             print("------------Diversity {}--------------".format(diversity))
             start_index = random.randint(
@@ -62,7 +60,7 @@ class train(object):
                 len(self.files_content) - self.config.max_len - 1)
             generated = ''
             sentence = self.files_content[start_index:start_index +
-                                          self.config.max_len]
+                                                      self.config.max_len]
             generated += sentence
             for i in range(20):
                 x_pred = np.zeros((1, self.config.max_len))

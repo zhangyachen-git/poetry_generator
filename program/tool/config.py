@@ -13,12 +13,12 @@
 # here put the import lib
 class Config(object):
     # 原始数据
-    poetry_file = "data/original_data/poetry.txt"
+    poetry_file = "../data/original_data/poetry.txt"
     # 权重
-    weight_file = "data/output/weight_file/poetry_model.h5"
+    weight_file = "../data/output/weight_file/poetry_model.h5"
     # 根据前六个字预测第七个字
     max_len = 6
     batch_size = 512
     learning_rate = 0.001
     # 配置启动步骤
-    run_flag = "0"
+    run_flag = "2"

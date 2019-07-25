@@ -28,10 +28,10 @@ def result_image(history):
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
     plt.legend(['train'], loc='upper left')
-    plt.savefig('project_doumentation/train_log/acc.jpg')
+    plt.savefig('../project_doumentation/train_log/acc.jpg')
     # loss
     plt.plot(history.history['loss'])
     plt.ylabel('loss')
     plt.xlabel('epoch')
     plt.legend(['train'], loc='upper left')
-    plt.savefig('project_doumentation/train_log/loss.jpg')
+    plt.savefig('../project_doumentation/train_log/loss.jpg')

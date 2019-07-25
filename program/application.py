@@ -14,11 +14,9 @@ import os
 import numpy as np
 import random
 import train
-from keras.models import Input, Model, load_model
-import sys
-sys.path.append('program/tool')
+from keras.models import load_model
 from tool.config import Config
-import tool.data_utils
+from tool import data_utils
 
 # 文件预处理
 word2numF, num2word, words, files_content = data_utils.preprocess_file(Config)
@@ -58,8 +56,8 @@ def application(config):
             random_str_index = random.randrange(0, len(words))
             text += num2word.get(
                 random_str_index) if num2word.get(random_str_index) not in [
-                    ',', '。', '，'
-                ] else num2word.get(random_str_index + 1)
+                ',', '。', '，'
+            ] else num2word.get(random_str_index + 1)
     seed = random_line[-(config.max_len):-1]
 
     res = ''

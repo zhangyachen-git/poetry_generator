@@ -13,9 +13,7 @@
 import train
 import test
 import application
-import sys
-sys.path.append('program/tool')
-from config import Config
+from tool.config import Config
 
 # 主程序
 
